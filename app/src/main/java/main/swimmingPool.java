@@ -1,6 +1,6 @@
 package main;
 
-public class swimmingPool {
+public class SwimmingPool {
 	public int swimming(boolean weekend, int age, boolean  group,boolean primeM, int in_hour)throws Exception
 	{
 		int price;
@@ -9,9 +9,9 @@ public class swimmingPool {
 
 		if((in_hour >=5 && in_hour <= 22) && (age >=3 && age <= 75))
 		{
-			if(primeM == true)
+			if(primeM)
 			{
-				if(weekend == true)
+				if(weekend)
 				{
 					price = 125;
 
@@ -22,13 +22,13 @@ public class swimmingPool {
 
 				}
 			}else {
-				if(weekend == true)
+				if(weekend)
 				{
 					price = 250;
 
 				}
 				else {
-					if(group == true)
+					if(group)
 					{
 						price = 140;
 					}
