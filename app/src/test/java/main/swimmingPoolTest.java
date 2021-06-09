@@ -6,36 +6,36 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-class SwimmingPoolTest {
+class swimmingPoolTest {
 
 
   @Test
   void test01() throws Exception {
-    SwimmingPool s1 = new SwimmingPool();
+    swimmingPool s1 = new swimmingPool();
     assertThrows(Exception.class,()->s1.swimming(false,2,true,false,6),"Can not come in");;
   }
 
   @Test
   void test02() throws Exception {
-    SwimmingPool s1 = new SwimmingPool();
+    swimmingPool s1 = new swimmingPool();
     assertEquals(100, s1.swimming(false, 9, true, true,12));
   }
 
   @Test
   void test03() throws Exception {
-    SwimmingPool s1 = new SwimmingPool();
+    swimmingPool s1 = new swimmingPool();
     assertThrows(Exception.class,()->s1.swimming(true, 30 ,false,false,23),"Can not come in");
   }
 
   @Test
   void test04() throws Exception {
-    SwimmingPool s1 = new SwimmingPool();
+    swimmingPool s1 = new swimmingPool();
     assertEquals(125,s1.swimming(true, 65 ,false,true,12));
   }
 
   @Test
   void test05() throws Exception {
-    SwimmingPool s1 = new SwimmingPool();
+    swimmingPool s1 = new swimmingPool();
     assertThrows(Exception.class,()->s1.swimming(false, 90 ,false,true,11),"Can not come in");
   }
 

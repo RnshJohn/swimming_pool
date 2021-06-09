@@ -1,6 +1,6 @@
 package main;
 
-public class SwimmingPool {
+public class swimmingPool {
 	public int swimming(boolean weekend, int age, boolean  group,boolean primeM, int in_hour)throws Exception
 	{
 		int price;
