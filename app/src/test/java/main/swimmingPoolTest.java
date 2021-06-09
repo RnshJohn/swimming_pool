@@ -11,31 +11,31 @@ class SwimmingPoolTest {
 
   @Test
   void test01() throws Exception {
-    swimmingPool s1 = new swimmingPool();
+    SwimmingPool s1 = new SwimmingPool();
     assertThrows(Exception.class,()->s1.swimming(false,2,true,false,6),"Can not come in");;
   }
 
   @Test
   void test02() throws Exception {
-    swimmingPool s1 = new swimmingPool();
+    SwimmingPool s1 = new SwimmingPool();
     assertEquals(100, s1.swimming(false, 9, true, true,12));
   }
 
   @Test
   void test03() throws Exception {
-    swimmingPool s1 = new swimmingPool();
+    SwimmingPool s1 = new SwimmingPool();
     assertThrows(Exception.class,()->s1.swimming(true, 30 ,false,false,23),"Can not come in");
   }
 
   @Test
   void test04() throws Exception {
-    swimmingPool s1 = new swimmingPool();
+    SwimmingPool s1 = new SwimmingPool();
     assertEquals(125,s1.swimming(true, 65 ,false,true,12));
   }
 
   @Test
   void test05() throws Exception {
-    swimmingPool s1 = new swimmingPool();
+    SwimmingPool s1 = new SwimmingPool();
     assertThrows(Exception.class,()->s1.swimming(false, 90 ,false,true,11),"Can not come in");
   }
 
